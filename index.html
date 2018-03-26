@@ -6,35 +6,25 @@
   </head>
   <body>
     <div>Algorithm Visualization</div>
-    <button
-    id="simple-button">
-      Simple Random
-    </button>
-    <button
-    id="best-button">
-      Best Candidate
-    </button>
-    <button
-    id="poisson-button">
-      Poisson Disc
-    </button>
+    <button id="simple-button">Simple Random</button>
+    <button id="best-button">Best Candidate</button>
+    <button id="poisson-button">Poisson Disc</button>
     <svg height="500" width="900"></svg>
-    <button
-    id="reset">
-    Reset the board
-    </button>
-    <button
-    id="bubble-button">
-      Bubble Sort
-    </button>
-    <div class="bubble"></div>
-    <button
-    id="quick-button">
-      Quick Sort
-    </button>
-    <div class="quick"></div>
-
-    <div class="test"></div>
+    <button id="reset">Reset the board</button>
+    <div class="best-vis">
+      <svg class="best-vis-svg" height="500" width="800"></svg>
+      <button id="best-vis-button">Best Candidate Visualization</button>
+    </div>
+    <div class="poisson-vis">
+      <svg class="poisson-vis-svg" height="500" width="800"></svg>
+      <button id="poisson-vis-button">Poisson Disc Visualization</button>
+    </div>
+    <div class="bubble">
+      <button id="bubble-button">Bubble Sort</button>
+    </div>
+    <div class="quick">
+      <button id="quick-button">Quick Sort</button>
+    </div>
     <script type="text/javascript" src="./dist/bundle.js"></script>
   </body>
 </html>
