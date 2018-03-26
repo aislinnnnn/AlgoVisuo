@@ -3,7 +3,7 @@
 }
 
 .big-header {
-  color:#878f99;
+  color:#484848;
   padding: 15px;
 }
 
@@ -19,8 +19,10 @@
 
 .sample-button {
   margin: auto;
-  margin-right: 80px;
+  margin-right: 40px;
+  margin-left: 40px;
   display: inline-block;
+  border:none;
 }
 
 .big-header {
@@ -35,6 +37,20 @@
 }
 
 .sample-svg {
-  border: 1px solid lightgrey;
+  border: 3px solid lightgrey;
+  border-radius: 3px;
+}
 
+button {
+  background-color:#FF5A5F;
+   color:#FDF4F1;
+   padding: 8px;
+   width: auto;
+   height:30px;
+   border-radius: 3px;
+   font-size: 12px;
+   font-weight: bold;
+   letter-spacing: .5px;
+   margin-left: 10px;
+   font-weight: 500;
 }
