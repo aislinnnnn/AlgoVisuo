@@ -2,29 +2,36 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <link rel="stylesheet" href="assets/application.css">
+    <title>AlgoVisuo</title>
   </head>
   <body>
-    <div>Algorithm Visualization</div>
-    <button id="simple-button">Simple Random</button>
-    <button id="best-button">Best Candidate</button>
-    <button id="poisson-button">Poisson Disc</button>
-    <svg height="500" width="900"></svg>
-    <button id="reset">Reset the board</button>
-    <div class="best-vis">
-      <svg class="best-vis-svg" height="500" width="800"></svg>
-      <button id="best-vis-button">Best Candidate Visualization</button>
+    <div class="sample-container">
+      <h1 class="big-header">AlgoVisuo</h1>
+      <div class="sample-buttons">
+        <button class="sample-button" id="simple-button">Simple Random</button>
+        <button class="sample-button" id="best-button">Best Candidate</button>
+        <button class="sample-button" id="poisson-button">Poisson Disc</button>
+        <button class="sample-button" id="reset">Reset the board</button>
+      </div>
+      <div class="sample-svg">
+        <svg height="500" width="900"></svg>
+      </div>
     </div>
-    <div class="poisson-vis">
-      <svg class="poisson-vis-svg" height="500" width="800"></svg>
-      <button id="poisson-vis-button">Poisson Disc Visualization</button>
-    </div>
-    <div class="bubble">
-      <button id="bubble-button">Bubble Sort</button>
-    </div>
-    <div class="quick">
-      <button id="quick-button">Quick Sort</button>
-    </div>
+      <div class="best-vis">
+        <svg class="best-vis-svg" height="500" width="800"></svg>
+        <button id="best-vis-button">Best Candidate Visualization</button>
+      </div>
+      <div class="poisson-vis">
+        <svg class="poisson-vis-svg" height="500" width="800"></svg>
+        <button id="poisson-vis-button">Poisson Disc Visualization</button>
+      </div>
+      <div class="bubble">
+        <button id="bubble-button">Bubble Sort</button>
+      </div>
+      <div class="quick">
+        <button id="quick-button">Quick Sort</button>
+      </div>
     <script type="text/javascript" src="./dist/bundle.js"></script>
   </body>
 </html>
