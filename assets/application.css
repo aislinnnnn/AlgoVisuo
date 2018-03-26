@@ -3,7 +3,8 @@
 }
 
 .big-header {
-  color:#484848;
+  color:#878f99;
+  padding: 15px;
 }
 
 .sample-container {
@@ -12,23 +13,28 @@
 
 .sample-buttons {
   margin:auto;
-  width: 50%;
-  align-self: center;
+  text-align: center;
+  width: 800px;
 }
 
 .sample-button {
   margin: auto;
+  margin-right: 80px;
+  display: inline-block;
 }
 
 .big-header {
   margin:auto;
-  width: 50%;
   text-align:center;
+  width: 800px;
+}
+
+.sample-svg-container {
+  text-align: center;
+  margin-top:15px;
 }
 
 .sample-svg {
-  margin:auto;
-  width: 50%;
   border: 1px solid lightgrey;
-  margin-top:15px;
+
 }
