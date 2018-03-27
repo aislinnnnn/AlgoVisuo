@@ -120,13 +120,13 @@ button {
 	border-width: 0.25em 0.25em 0 0;
 	content: '';
 	display: inline-block;
-	height: 0.45em;
+	height: 0.9em;
 	left: 0.15em;
 	position: relative;
 	top: 0.15em;
 	transform: rotate(-45deg);
 	vertical-align: top;
-	width: 0.45em;
+	width: 0.9em;
 }
 
 .chevron.bottom:before {
@@ -139,8 +139,8 @@ button {
   position:absolute;
   bottom:80px;
   left:50%;
-  border:1px solid black;
+  /* border:1px solid black;
   width: 12px;
-  height: 12px;
+  height: 12px; */
 
 }
