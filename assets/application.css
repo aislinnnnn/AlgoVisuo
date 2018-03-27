@@ -32,6 +32,7 @@
   margin:auto;
   text-align: center;
   width: 800px;
+  margin-top: 30px;
 }
 
 .sample-button {
@@ -45,7 +46,8 @@
 }
 
 .big-header {
-  margin:auto;
+  margin: 0 auto;
+  margin-bottom: 15px;
   text-align:center;
   width: 800px;
 }
@@ -87,34 +89,6 @@ button {
    font-weight: 500;
 }
 
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    min-height:300px;
-}
 
 .chevron::before {
   color:#484848;
@@ -161,6 +135,13 @@ button {
   font-weight: 100;
 }
 
+.name {
+  color:#008489;
+  font-size: 18px;
+  /* position: absolute;
+  right:0; */
+}
+
 .contact-link {
   text-decoration: none;
   color: grey;
@@ -176,4 +157,8 @@ button {
   padding: 5px;
   position: absolute;
   margin: 5px;
+}
+
+.footer {
+  height: 200px;
 }
