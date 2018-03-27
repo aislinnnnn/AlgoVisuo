@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
 .scroll-button {
@@ -17,9 +17,11 @@
 }
 
 .big-header {
-  color:#484848;
-  padding: 15px;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  color:#008489;
+  padding-top: 80px;
   padding-bottom: 0px;
+  font-size:40px;
 }
 
 .sample-container {
@@ -148,10 +150,30 @@ button {
 .icon {
   height:40px;
   width:40px;
+  padding:5px;
 }
 
 .intro-content {
   margin-top:30px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: #484848;
+  font-weight: 100;
+}
+
+.contact-link {
+  text-decoration: none;
+  color: grey;
+}
+
+.contact-info {
+  position:absolute;
+  right:3%;
+  text-align: center;
+}
+
+.contact-text {
+  padding: 5px;
+  position: absolute;
+  margin: 5px;
 }
