@@ -2,6 +2,10 @@
   font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
 
+h1 {
+  margin:15px;
+}
+
 .scroll-button {
   height: 50px;
   width: 50px;
@@ -22,6 +26,10 @@
   padding-top: 80px;
   padding-bottom: 0px;
   font-size:40px;
+}
+
+.sampling-header {
+  padding-top: 30px;
 }
 
 .sample-container {
