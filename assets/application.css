@@ -170,3 +170,7 @@ button {
 .footer {
   height: 200px;
 }
+
+.k-nearest-svg {
+  border: 2px solid lightgrey;
+}

@@ -56,7 +56,7 @@
       <h1 class="big-header">Detailed Best Candidate Visualization</h1>
       <div class="poisson-button">
         <button id="best-vis-button">Best Candidate Visualization</button>
-        <button  id="stop-best-vis">STOP BEST VIS</button>
+        <button  id="stop-best-vis">STOP</button>
       </div>
       <div class="poisson-vis">
         <svg class="best-vis-svg svg" height="400" width="600"></svg>
@@ -65,12 +65,25 @@
       <h1 class="big-header">Detailed Poisson Disc Visualization</h1>
       <div class="poisson-button">
         <button id="poisson-vis-button">Poisson Disc Visualization</button>
-        <button  id="stop-poisson-vis">STOP POISSON VIS</button>
+        <button  id="stop-poisson-vis">STOP</button>
       </div>
       <div class="poisson-vis">
         <svg class="poisson-vis-svg svg" height="400" width="600"></svg>
         <svg class="poisson-vis-svg-2 svg" height="400" width="600"></svg>
       </div>
+      <h1 class="big-header">K Nearest Neighbor Algorithm</h1>
+      <div >
+        <form id="k" >
+          <span>Check an associated risk:<span><br>
+            <span>Age:</span>
+            <input type="text" id='age-input'>
+            <span>BMI:</span>
+            <input type="text" id='bmi-input'>
+            <button>Submit</button>
+        </form>
+        <button type="button" id="reset-graph">RESET</button>
+      </div>
+      <svg class="k-nearest-svg" height="500" width="800"></svg>
       <div class="footer">
 
       </div>
