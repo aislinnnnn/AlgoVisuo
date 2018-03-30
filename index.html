@@ -72,18 +72,26 @@
         <svg class="poisson-vis-svg-2 svg" height="400" width="600"></svg>
       </div>
       <h1 class="big-header">K Nearest Neighbor Algorithm</h1>
-      <div >
-        <form id="k" >
-          <span>Check an associated risk:<span><br>
-            <span>Age:</span>
-            <input type="text" id='age-input'>
-            <span>BMI:</span>
-            <input type="text" id='bmi-input'>
-            <button>Submit</button>
-        </form>
-        <button type="button" id="reset-graph">RESET</button>
+      <div class="k-nearest-container">
+        <div>
+          <form id="k" >
+            <span>Enter an age between 35 and 75 and a BMI between 20 and 45 to calculate an associated risk:<span><br>
+              <span>Age:</span>
+              <input class="k-input"type="text" id='age-input'>
+              <span>BMI:</span>
+              <input class="k-input"type="text" id='bmi-input'>
+              <button>Submit</button>
+            </form>
+            <button type="button" id="reset-graph">RESET</button>
+            <!-- <div class="gender-selection">
+            <label>Female:</label>
+            <input checked type="radio" id="female" name="gender" value="female">
+            <label>Male:</label>
+            <input type="radio" id="male" name="gender" value="male">
+          </div> -->
+        </div>
+        <svg class="k-nearest-svg" height="500" width="800"></svg>
       </div>
-      <svg class="k-nearest-svg" height="500" width="800"></svg>
       <div class="footer">
 
       </div>

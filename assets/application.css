@@ -174,3 +174,11 @@ button {
 .k-nearest-svg {
   border: 2px solid lightgrey;
 }
+
+.k-nearest-container {
+  text-align: center;
+}
+
+.k-input {
+  margin: 15px;
+}
