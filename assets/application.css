@@ -34,6 +34,8 @@ h1 {
 
 .sample-container {
   margin:auto;
+  display: flex;
+  justify-content: center;
 }
 
 .sample-buttons {
@@ -141,6 +143,7 @@ button {
   padding-right: 15%;
   color: #484848;
   font-weight: 100;
+  font-size: 20px;
 }
 
 .name {
@@ -181,4 +184,9 @@ button {
 
 .k-input {
   margin: 15px;
+}
+
+.sampling-info {
+  margin-top: 170px;
+  margin-right: 30px;
 }
