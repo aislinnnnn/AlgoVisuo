@@ -44,13 +44,18 @@
       </div>
     </div>
     <div class="">
+      <a name="Scroll"></a>
       <h1 class="big-header sampling-header">The Problem</h1>
-      <p>In computer graphics, screens use a collection of pixels to display images.  Pixels are small squares, all the same size that each contain one single color.  When attempting to display curved lines, images on the screen are often displayed with jagged edges as the original images do not take up entire pixels.  This distortion of the original image appearance is known as aliasing and there are many anti-aliasing techniques that have been designed to reduce these effects.  Supersampling, or post-filtering, takes multiples samples from each pixel and averages the samples' colors together to find the final color to display for that individual pixel.  For optimal results, the samples taken from inside each pixel need to be as evenly spaced as possible.  That is where the following sampling algorithms come in. </p>
+      <p class="sampling-problem">In computer graphics, screens use a collection of pixels to display images.  Pixels are small squares, all the same size that each contain one single color.  When attempting to display curved lines, images on the screen are often displayed with jagged edges as the original images do not take up entire pixels.  This distortion of the original image appearance is known as aliasing and there are many anti-aliasing techniques that have been designed to reduce these effects.  Supersampling, or post-filtering, takes multiples samples from each pixel and averages the samples' colors together to find the final color to display for that individual pixel.  For optimal results, the samples taken from inside each pixel need to be as evenly spaced as possible.  That is where the following sampling algorithms come in. </p>
     </div>
     <div class="sample-container">
-      <a name="Scroll"></a>
-      <div class="sampling-info">
-        Sampling description
+      <div class="">
+        <div class="sampling-info">
+          The simple random sampling algorithm randomly chooses a position based on the board's height and width to place k number of samples. This is not a very effective solution to our problem.  As seen in the visualization, there are clusters of samples as well as gaps of space without samples.
+        </div>
+        <div class="sampling-info best">
+          The simple random sampling algorithm randomly chooses a position based on the board's height and width to place k number of samples. This is not a very effective solution to our problem.  As seen in the visualization, there are clusters of samples as well as gaps of space without samples.
+        </div>
       </div>
       <div class="">
         <h1 class="big-header sampling-header">Sampling Algorithms</h1>
