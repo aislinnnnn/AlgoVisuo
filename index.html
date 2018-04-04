@@ -8,21 +8,23 @@
   </head>
   <body>
     <div class="contact-info">
-      <a class="contact-link" href="https://www.linkedin.com/in/aislinn-cronin-b2355683/">
+      <a class="contact-link" href="https://www.linkedin.com/in/aislinn-cronin-b2355683/"
+      target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROzrIJg3vOLsLFnQhSFzCpzTWVLul-zzOsHlJJ2ar8rA3y0Tv0TA"
         alt=""
         class="icon"
-        taget="_blank">
+        >
       </a>
-      <a class="contact-link" href="https://github.com/aislinncronin">
+      <a class="contact-link" href="https://github.com/aislinncronin"
+      target="_blank">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcp4XkQooBdtKw_wlscgX8vVCUlN_e0QURBH-6peBD7_sk9k3j" alt=""
         class="icon"
-        taget="_blank">
+        >
       </a>
-      <a class="contact-link" href="https://aislinncronin.github.io/">
+      <a class="contact-link" href="https://aislinncronin.github.io/"
+      target="_blank">
         <img src="http://icons.iconarchive.com/icons/colorflow/colorflow_1/256/42-Gray-icon.png" alt=""
-        class="icon"
-        taget="_blank">
+        class="icon">
       </a>
     </div>
     <div class="intro">
@@ -70,7 +72,7 @@
         </div>
       </div>
       <div class="sampling-info">
-        Sampling description
+        The Poisson Disc sampling algorithm first places one random sample and then randomly chooses one of the existing samples and calculates an annulus around it. A sample is chosen inside the bounds of that annulus and its distances from all other samples are calculated.  If the sample is at least the minimum distance, r, away from all other samples, it is added as a sample itself.  If not, it is discarded and a new sample is chosen inside the annulus.  This occurs up to k number of times until an acceptable sample is found or the existing sample being used to form the anulus is deactivated.  The algorithm continues until all samples are deactivated. This visualization uses an adaptation of Robert Bridson's Poisson Disc algorithm that runs in O(n) time.  This algorithm produces great results, ensuring that no two samples are closer than distance r apart.
       </div>
     </div>
       <h1 class="big-header">Detailed Best Candidate Visualization</h1>
@@ -79,8 +81,18 @@
         <button  id="stop-best-vis">STOP</button>
       </div>
       <div class="poisson-vis">
-        <svg class="best-vis-svg svg" height="400" width="600"></svg>
-        <svg class="best-vis-svg-2 svg" height="400" width="600"></svg>
+        <div class="">
+          <svg class="best-vis-svg svg" height="400" width="600"></svg>
+          <div class="">
+            This visualization shows the accumulation of all of the candidate samples created.
+          </div>
+        </div>
+        <div class="">
+          <svg class="best-vis-svg-2 svg" height="400" width="600"></svg>
+          <div class="">
+            This visualization shows each round of candidates created and the best one that is chosen.
+          </div>
+        </div>
       </div>
       <h1 class="big-header">Detailed Poisson Disc Visualization</h1>
       <div class="poisson-button">
@@ -88,8 +100,18 @@
         <button  id="stop-poisson-vis">STOP</button>
       </div>
       <div class="poisson-vis">
-        <svg class="poisson-vis-svg svg" height="400" width="600"></svg>
-        <svg class="poisson-vis-svg-2 svg" height="400" width="600"></svg>
+        <div class="">
+          <svg class="poisson-vis-svg svg" height="400" width="600"></svg>
+          <div class="poission-deatailed-info">
+            This visualization shows step by step how the algorithms works. The minimum distance, r, is used to form a light grey circle around each sample.  The annulus is shown in dark grey. The candidate samples are in pink.  Chosen samples become seagreen and deactivated samples become black.
+          </div>
+        </div>
+        <div class="">
+          <svg class="poisson-vis-svg-2 svg" height="400" width="600"></svg>
+          <div class="">
+            This visulaization displays each chosen sample as it is created.
+          </div>
+        </div>
       </div>
       <h1 class="big-header">K Nearest Neighbor Algorithm</h1>
       <div class="k-nearest-container">

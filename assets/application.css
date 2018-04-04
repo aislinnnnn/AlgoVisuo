@@ -69,6 +69,9 @@ h1 {
 
 .poisson-vis {
   text-align: center;
+  display: flex;
+  justify-content: center;
+
 }
 
 .poisson-button {
@@ -206,4 +209,8 @@ button {
   padding-top: 20px;
   border-top: 2px solid lightgrey;
   color:#484848;
+}
+
+.poission-deatailed-info {
+  width: 600px;
 }
