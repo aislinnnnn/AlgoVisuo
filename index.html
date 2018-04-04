@@ -54,7 +54,7 @@
           The simple random sampling algorithm randomly chooses a position based on the board's height and width to place k number of samples. This is not a very effective solution to our problem.  As seen in the visualization, there are clusters of samples as well as gaps of space without samples.
         </div>
         <div class="sampling-info best">
-          The simple random sampling algorithm randomly chooses a position based on the board's height and width to place k number of samples. This is not a very effective solution to our problem.  As seen in the visualization, there are clusters of samples as well as gaps of space without samples.
+          Mitchell's best-candidate algorithm chooses the first sample randomly.  For each subsequent sample, k number of candidates samples are randomly chosen.  From that group of k candidates, the one farthest from all of the existing samples is chosen to be added as sample itself. The visulizations in this project use a k value of 30.  The distibution produced by Mitchell's best algorithm is not perfect, but is a great improvement over simple random sampling.
         </div>
       </div>
       <div class="">
