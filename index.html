@@ -40,27 +40,50 @@
         <br>
         <br>
         This project first looks at three different sampling algorithms and then features a simple machine learning k-nearest-neighbor algorithm. </p>
+        <br>
+        <br>
+        <div class="center">
+          <h1>Scroll through them all or jump to one that interests you!</h1>
+        </div>
+
+        <br>
       </div>
-      <div class="scroll-container">
-        <a href="#Scroll"><span class="chevron bottom"></span></a>
+      <div class="center">
+        <a href="#KNN"><button class="jump-button" type="button" name="button">K-Nearest-Neighbor</button></a>
+        <a href="#Samp-Comp"><button class="jump-button" type="button" name="button">Sampling Comparison</button></a>
+        <a href="#Mitchell"><button class="jump-button" type="button" name="button">Detailed Mitchell's Best Candidate</button></a>
+        <a href="#Poisson"><button class="jump-button" type="button" name="button">Detailed Poisson Disc</button></a>
+      </div>
+      <div class="justify-right">
+        <div id="footer" class="footer">
+          <button type="button" name="button">Back to Top!</button>
+        </div>
       </div>
     </div>
-    <div class="">
-      <a name="Scroll"></a>
-      <h1 class="big-header sampling-header">The Problem</h1>
-      <p class="sampling-problem">In computer graphics, screens use a collection of pixels to display images.  Pixels are small squares, all the same size that each contain one single color.  When attempting to display curved lines, images on the screen are often displayed with jagged edges as the original images do not take up entire pixels.  This distortion of the original image appearance is known as aliasing and there are many anti-aliasing techniques that have been designed to reduce these effects.  Supersampling, or post-filtering, takes multiples samples from each pixel and averages the samples' colors together to find the final color to display for that individual pixel.  For optimal results, the samples taken from inside each pixel need to be as evenly spaced as possible.  That is where the following sampling algorithms come in. </p>
-    </div>
+    <a name="Samp-Comp"></a>
     <div class="sample-container">
       <div class="">
-        <div class="sampling-info">
+        <div id="simple-sample-info" class="sampling-info">
           The simple random sampling algorithm randomly chooses a position based on the board's height and width to place k number of samples. This is not a very effective solution to our problem.  As seen in the visualization, there are clusters of samples as well as gaps of space without samples.
         </div>
-        <div class="sampling-info best">
+        <div id="best-sample-info" class="sampling-info best">
           Mitchell's best-candidate algorithm chooses the first sample randomly.  For each subsequent sample, k number of candidates samples are randomly chosen.  From that group of k candidates, the one farthest from all of the existing samples is chosen to be added as sample itself. The visulizations in this project use a k value of 30.  The distibution produced by Mitchell's best algorithm is not perfect, but is a great improvement over simple random sampling.
         </div>
       </div>
       <div class="">
         <h1 class="big-header sampling-header">Sampling Algorithms</h1>
+        <div class="center">
+          <button id="problem-info" type="button" name="button" >Read About the Problem!</button>
+          <div id="problem-modal" class="modal">
+            <div class="modal-content">
+              <span id="close" class="close">&times;</span>
+              <div class="">
+                <h1 class="big-header sampling-header">The Problem</h1>
+                <p class="sampling-problem">In computer graphics, screens use a collection of pixels to display images.  Pixels are small squares, all the same size that each contain one single color.  When attempting to display curved lines, images on the screen are often displayed with jagged edges as the original images do not take up entire pixels.  This distortion of the original image appearance is known as aliasing and there are many anti-aliasing techniques that have been designed to reduce these effects.  Supersampling, or post-filtering, takes multiples samples from each pixel and averages the samples' colors together to find the final color to display for that individual pixel.  For optimal results, the samples taken from inside each pixel need to be as evenly spaced as possible.  That is where the following sampling algorithms come in. </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="sample-buttons">
           <button class="sample-button" id="simple-button">Simple Random</button>
           <button class="sample-button" id="best-button">Best Candidate</button>
@@ -71,10 +94,11 @@
           <svg class ="svg" height="500" width="800"></svg>
         </div>
       </div>
-      <div class="sampling-info">
+      <div id="poisson-sample-info" class="sampling-info">
         The Poisson Disc sampling algorithm first places one random sample and then randomly chooses one of the existing samples and calculates an annulus around it. A sample is chosen inside the bounds of that annulus and its distances from all other samples are calculated.  If the sample is at least the minimum distance, r, away from all other samples, it is added as a sample itself.  If not, it is discarded and a new sample is chosen inside the annulus.  This occurs up to k number of times until an acceptable sample is found or the existing sample being used to form the anulus is deactivated.  The algorithm continues until all samples are deactivated. This visualization uses an adaptation of Robert Bridson's Poisson Disc algorithm that runs in O(n) time.  This algorithm produces great results, ensuring that no two samples are closer than distance r apart.
       </div>
     </div>
+    <a name="Mitchell"></a>
       <h1 class="big-header">Detailed Best Candidate Visualization</h1>
       <div class="poisson-button">
         <button id="best-vis-button">Best Candidate Visualization</button>
@@ -94,6 +118,7 @@
           </div>
         </div>
       </div>
+      <a name="Poisson"></a>
       <h1 class="big-header">Detailed Poisson Disc Visualization</h1>
       <div class="poisson-button">
         <button id="poisson-vis-button">Poisson Disc Visualization</button>
@@ -113,11 +138,12 @@
           </div>
         </div>
       </div>
-      <h1 class="big-header">K Nearest Neighbor Algorithm</h1>
+      <a name="KNN"></a>
+      <h1 class="big-header">K-Nearest-Neighbor Algorithm</h1>
       <div class="k-nearest-container">
         <div>
           <form id="k" >
-            <span>Enter an age between 35 and 75 and a BMI between 20 and 45 to calculate an associated risk:<span><br>
+            <span>Enter an age between 35 and 75 and a BMI between 20 and 45 to calculate the associated increased risk of mortality:<span><br>
               <span>Age:</span>
               <input class="k-input"type="text" id='age-input'>
               <span>BMI:</span>
@@ -128,21 +154,28 @@
         </div>
         <div class="poisson-vis">
           <div class="sampling-info">
-            hello ahsdbfklahsbf;kasnf' ;ksdf ;jasf jsna; bfsda
+            The KNN algorithm is a supervised machine learning classification algorithm.  It takes in a set of training data and produces an inferred function that takes a new data point as input and outputs the predicted classification.
           </div>
           <div class="">
             <svg class="k-nearest-svg" height="500" width="800"></svg>
+            <div class="small-knn-info">
+              *Data used for this visualization is NOT real and is loosesly based on <a href="http://www.nejm.org/doi/full/10.1056/NEJM199801013380101" target="_blank">this study.</a>
+            </div>
+            <div class="knn-info">
+              Green data points represent no increased risk of mortality compared to the control, yellow data points represent a 20% increased risk and red data points represent a 50% increased risk.
+            </div>
           </div>
           <div class="sampling-info">
-            hello ahsdbfklahsbf;kasnf' ;ksdf ;jasf jsna; bfsda
+            The KNN algorithm searches the training data for "neighbors", or data points that most closely resemble the inputted data point, and assigns the new data point to the most common class of its neighbors.
           </div>
 
+
         </div>
+        <div class="end">
 
+        </div>
       </div>
-      <div class="footer">
 
-      </div>
     <script type="text/javascript" src="./dist/bundle.js"></script>
   </body>
 </html>
