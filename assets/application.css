@@ -211,6 +211,12 @@ button {
   color:#484848;
 }
 
-.poission-deatailed-info {
+.poission-detailed-info {
   width: 600px;
+  padding-left: 10px;
+  color: #484848;
+}
+
+.detailed-vis-description {
+  color: #484848;
 }
