@@ -1,44 +1,19 @@
-# JavaScript-Project- Algorithm Visualization
+# AlgoVisuo
 
-This project will take common algorithms and represent them visually in order to promote a better understanding of these 
-abstract ideas and facilitate the recognition of patterns in data.
+[AlgoVisuo Live](http://aislinncronin.com/AlgoVisuo/)
 
-## MVP
+AlgoVisuo is a project designed to visually represent algorithms in order to promote deeper understanding and facilitate the recognition of patterns.  It was built using JavaScript, D3.js, HTML and CSS.  AlgoVisuo first looks at three different sampling algorithms and then features a simple machine learning k-nearest-neighbor algorithm.  
 
-1. Random dot distribution: solved and visualized using multiple algorithms (Mitchel's best candidate, uniform random sampling, Poisson-disc)
-
-2. Graphs comparing the algorithms to one another.
-
-3. Maze creation visualization-recursive backtracer, Wilson's, randomized Prim
-
-4. Sorting algorithm visualizations: mergesort, quicksort, bubblesort
-
-5. Matrix diagrams showing sorting algorithm biases that are not as visible to the human eye
-
-6. ReadMe
+![Sampling vis](assets/screenshots/sampling.png)
 
 
-## Technologies
+## Languages and Libraries
 
-I will build this project using vanilla JavaScript, CSS and D3.
+* D3.js
+* JavaScript 
+* HTML
+* CSS
 
-## Timeline
+## To Do
 
-Phase 1: **DAY 1**
-
-   * random dot distribution
-   * comparison graphs
-   * research/learn D3
-
-Phase 2: **DAY 2**
-
-   * maze creation visualization- with color
-
-Phase 3: **DAY 3+**
-
-   * sorting algorithms
-   * matrix diagrams
-   
-## BONUS
-
-   * k-means clustering visualization 
+Things I plan to work on next:
