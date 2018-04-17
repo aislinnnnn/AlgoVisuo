@@ -6,7 +6,7 @@ AlgoVisuo is a project designed to visually represent algorithms in order to pro
 
 ### Sampling Algorithms
 
-The first three algorithms in this project are sampling algorithms that can be used for supersampling, or post-filtering.  Supersampling is used in computer graphics to reduce aliasing, or the jagged edges seen on curved images. For optimal results, the sampling algorithms must take a number of samples from a board as evenly spaced apart as possible.  This project features simple random, Mitchell's best candidate and Poisson disc sampling.
+The first three algorithms in this project are sampling algorithms that can be used for supersampling, or post-filtering.  Supersampling is used in computer graphics to reduce aliasing, or the jagged edges seen on curved images. For optimal results, the sampling algorithms must take a number of samples from a board as evenly spaced apart as possible.  This project features simple random, Mitchell's best candidate and Poisson disc sampling.  The Poisson disc algorithm used in this project is based on Mike Bostock's implementation of Bridson's algorithm.
 
 ![Sampling vis](assets/screenshots/sampling.png)
 
