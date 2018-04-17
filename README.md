@@ -22,7 +22,7 @@ Lastly, the machine learning k-nearest-neighbor is featured to classify new data
 
 In the visualization, the circle produced around the new entered data point encircles the "neighbors", or most similar data points, to the new data point.  The color of the circle represents the new data points decided classification.
 
-In the algorithm used, 11 is the number of neighbors being considered.
+In the algorithm used, 11 is the number of neighbors being considered. This algorithm is based on Burak Kanber's implementation.
 
 
 ## Languages and Libraries
